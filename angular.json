@@ -57,13 +57,15 @@
           "defaultConfiguration": "production"
         },
         "serve": {
+          
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
               "browserTarget": "DeployAngularExample:build:production"
             },
             "development": {
-              "browserTarget": "DeployAngularExample:build:development"
+              "browserTarget": "DeployAngularExample:build:development",
+              "proxyConfig": "proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
